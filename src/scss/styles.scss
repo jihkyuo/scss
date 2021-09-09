@@ -1,18 +1,9 @@
 @import "_variables.scss";
+@import "_mixins.scss";
+@import "_buttons";
 
-h2 {
-  color: $bg;
-}
-
-.box {
-  background-color: yellow;
-  h2 {
-    color: red;
-    &:hover {
-      color: hotpink;
-    }
-  }
-  &:hover {
-    background-color: green;
+a {
+  @include responsive {
+    text-decoration: none;
   }
 }
