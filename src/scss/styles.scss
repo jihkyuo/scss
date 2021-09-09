@@ -1,0 +1,18 @@
+@import "_variables.scss";
+
+h2 {
+  color: $bg;
+}
+
+.box {
+  background-color: yellow;
+  h2 {
+    color: red;
+    &:hover {
+      color: hotpink;
+    }
+  }
+  &:hover {
+    background-color: green;
+  }
+}
