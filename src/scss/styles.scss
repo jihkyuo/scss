@@ -69,8 +69,50 @@ header {
 }
 
 main {
-  height: 5000vh;
-
+  height: 1000vh;
   background-color: $red;
   margin-left: $fixedWidth;
+  .movie {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: 600;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      .movie__header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        h4 {
+          font-size: 25px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+    .movie__goodbad {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 25px;
+      i {
+        margin-left: 15px;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
