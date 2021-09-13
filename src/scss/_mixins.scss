@@ -1,4 +1,6 @@
-$minSmall: 480px;
+$minPhone: 150px;
+$maxPhone: 480px;
+$minSmall: $maxPhone + 1;
 $maxSmall: 780px;
 $minMiddle: $maxSmall + 1;
 $maxMiddle: 980px;
@@ -16,6 +18,10 @@ $maxWide: 2000px;
     }
   } @else if $size == "small" {
     @media screen and (min-width: $minSmall) and (max-width: $maxSmall) {
+      @content;
+    }
+  } @else if $size == "phone" {
+    @media screen and (min-width: $minPhone) and (max-width: $maxPhone) {
       @content;
     }
   }
