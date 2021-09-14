@@ -121,6 +121,9 @@ body {
   @include mediasize("small") {
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
+  @include mediasize("phone") {
+    grid-template-columns: 1fr;
+  }
   grid-auto-rows: 75vh;
   .post {
     cursor: pointer;
